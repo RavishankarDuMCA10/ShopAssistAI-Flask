@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            Invite App
+        </title>
+    </head>
+    <body>
+        <div>
+            <h1>Invite App</h1>
+        </div>
+        <div>
+            <h2> {{ name }}</h2>
+        </div>        
+        
+        <form action="/invite" method="post">
+            <input type="text" name="user_input_message">
+            <input type="submit" value="Submit">
+        </form>
+        <form action="/end_conv" method="post">
+            <button type="submit">END CONVERSATION</button>
+        </form>
+
+    </body>
+</html>
