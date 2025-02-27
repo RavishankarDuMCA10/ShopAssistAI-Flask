@@ -12,9 +12,11 @@ def default_func():
 
 @app.route("/end_conv", methods = ['POST'])
 def end_conv():
+    print("end_conv called.")    
     conversation = []
     conversation.append({'bot':'Please input your name'})
-    return redirect(url_for('default_func'))
+    print("conversation cleared and added initial bot message.")   
+    return render_template("index_invite.html", name = conversation) 
 
 @app.route("/invite", methods = ['POST'])
 def invite():
