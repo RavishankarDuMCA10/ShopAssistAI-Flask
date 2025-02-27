@@ -62,6 +62,7 @@ button {
     float: right;
     clear: both;
     max-width: 80%;
+    margin: 5px;
 }
 
 .bot {
@@ -72,6 +73,7 @@ button {
     float: left;
     clear: both;
     max-width: 80%;
+    margin: 5px;
 }
 
 .center {
