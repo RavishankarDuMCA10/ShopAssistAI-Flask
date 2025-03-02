@@ -326,7 +326,8 @@ def product_map_layer(laptop_description):
     {delimiter}
     """
 
-    input = f"""Follow the prompt instructions step-by-step and output the dictionary in {lap_spec} JSON format for the following laptop {laptop_description}."""
+    input = f"""Follow the prompt instructions step-by-step and output the dictionary in {lap_spec} JSON format for the following laptop {laptop_description}. You are an intelligent laptop gadget expert and encourage the user to share their requirements. You do not need to say that you will need to update dictionary and about thought process.
+"""
 
     messages=[{"role": "system", "content":prompt },{"role": "user","content":input}]
 
